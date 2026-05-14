@@ -1,24 +1,49 @@
-# newapp
+# NewApp — Веб-приложение
 
-## Project setup
-```
+## 🚀 Быстрый запуск (Docker)
+
+docker-compose up -d
+
+Открыть: http://localhost:5000
+
+## 🔑 Тестовые аккаунты
+
+| Email | Пароль | Роль |
+|-------|--------|------|
+| admin@example.com | admin123 | Администратор |
+| stat@example.com | stat123 | Статистик |
+| user@example.com | 123456 | Пользователь |
+| expert@example.com | 123456 | Эксперт |
+| pending@example.com | 123456 | Неверифицирован |
+| blocked@example.com | 123456 | Заблокирован |
+
+## 🛠 Стек
+
+- Frontend: Vue 3 + Vue Router
+- Backend: Node.js + Express
+- База данных: PostgreSQL
+- Аутентификация: JWT + bcrypt
+
+## 📦 Ручной запуск
+
+### Бэкенд
+cd backend
 npm install
-```
+node server.js
 
-### Compiles and hot-reloads for development
-```
+### Фронтенд
+cd frontend
+npm install
 npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## ⚙️ Настройка подключения к БД
 
-### Lints and fixes files
-```
-npm run lint
-```
+В файле `backend/.env`:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+DB_USER=postgres       # имя пользователя БД
+DB_PASSWORD=1310       # пароль БД
+DB_HOST=postgres       # хост (postgres для Docker, localhost для локального запуска)
+DB_PORT=5432
+DB_NAME=NewApp         # имя базы данных
+
+При использовании своей БД — измените эти параметры.
