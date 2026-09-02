@@ -1,12 +1,12 @@
 # NewApp — Веб-приложение
 
-## 🚀 Быстрый запуск (Docker)
+##  Быстрый запуск (Docker)
 
 docker-compose up -d
 
 Открыть: http://localhost:5000
 
-## 🔑 Тестовые аккаунты
+##  Тестовые аккаунты
 
 | Email | Пароль | Роль |
 |-------|--------|------|
@@ -17,14 +17,14 @@ docker-compose up -d
 | pending@example.com | 123456 | Неверифицирован |
 | blocked@example.com | 123456 | Заблокирован |
 
-## 🛠 Стек
+##  Стек
 
 - Frontend: Vue 3 + Vue Router
 - Backend: Node.js + Express
 - База данных: PostgreSQL
 - Аутентификация: JWT + bcrypt
 
-## 📦 Ручной запуск
+##  Ручной запуск
 
 ### Бэкенд
 cd backend
@@ -36,7 +36,7 @@ cd frontend
 npm install
 npm run serve
 
-## ⚙️ Настройка подключения к БД
+##  Настройка подключения к БД
 
 В файле `backend/.env`:
 
